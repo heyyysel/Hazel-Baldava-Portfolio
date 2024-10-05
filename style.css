@@ -145,6 +145,79 @@ a:hover {
 .hamburger-icon span:first-child {
   transform: none;
 }
+/* General Popup Styles */
+.contact-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%; /* Adjusted for better fit */
+  max-width: 400px;
+  background-color: #f9f9f9; /* Softer background color */
+  border: 1px solid #e0e0e0; /* Subtle border for definition */
+  border-radius: 10px;
+  z-index: 1000;
+  padding: 20px;
+  box-sizing: border-box;
+  display: none; /* Initially hidden */
+  animation: popupFadeIn 0.3s ease-in-out forwards;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Softer shadow */
+}
+
+/* Contact Popup Header */
+.contact-popup h2 {
+  margin: 0 0 15px 0; /* Improved spacing */
+  text-align: center;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Contact Information Container */
+.contact-info-container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: flex-start; /* Align to the left */
+}
+
+/* Contact Information Item */
+.contact-info-item {
+  display: flex;
+  align-items: center;
+  margin: 10px 0; /* Vertical margin for spacing */
+  width: 100%; /* Ensures the item takes full width */
+}
+
+.contact-icon img {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px; /* Adds space between the icon and text */
+}
+
+/* Contact Text */
+.contact-info-item p {
+  margin: 0; /* Remove margin for better alignment */
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Close Button */
+.close-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px; /* Increased margin for better spacing */
+  background-color: #6200ea; /* Aesthetic color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1rem; /* Adjusted font size */
+  transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.close-btn:hover {
+  background-color: #3700b3; /* Darker shade on hover */
+}
 
 /* SECTIONS */
 
@@ -201,16 +274,17 @@ section {
 
 #socials-container {
   display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-  gap: 1rem;
+  justify-content: center; 
+  gap: 1rem; 
+  margin-top: 1rem; 
 }
 
 /* ICONS */
 
 .icon {
-  cursor: pointer;
-  height: 2rem;
+  cursor: pointer; 
+    height: 2rem;
+    width: 2rem;
 }
 
 /* BUTTONS */
@@ -225,7 +299,7 @@ section {
   font-weight: 600;
   transition: all 300ms ease;
   padding: 1rem;
-  width: 8rem;
+  width: 12rem;
   border-radius: 2rem;
 }
 
@@ -357,28 +431,51 @@ article .icon {
 
 #projects {
   position: relative;
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center the project containers */
+  flex-wrap: wrap; /* Allow wrapping for responsiveness */
+  gap: 2rem; /* Add space between project items */
 }
 
-.color-container {
-  border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
+.color-container:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
 }
 
 .project-img {
-  border-radius: 2rem;
-  width: 90%;
-  height: 90%;
+  border-radius: 1rem; /* Adjusting radius for consistency */
+  width: 100%; /* Full width for responsiveness */
+  height: auto; /* Maintain aspect ratio */
 }
 
 .project-title {
   margin: 1rem;
   color: black;
+  font-weight: 500; /* Bold title for emphasis */
 }
 
 .project-btn {
   color: black;
   border-color: rgb(163, 163, 163);
+  padding: 0.5rem 1rem; /* Padding for buttons */
+  border-radius: 1rem; /* Rounded buttons */
+  transition: background 0.3s;
 }
+
+.project-btn:hover {
+  background: rgb(53, 53, 53); /* Background change on hover */
+  color: white; /* Change text color on hover */
+}
+
+/* TITLE STYLES */
+
+.projects-title {
+    text-align: center; /* Center align the title text */
+    font-size: 2.5rem; /* Adjust font size as needed */
+    margin-bottom: 2rem; /* Space below the title */
+    color: black; /* Title color */
+    font-weight: 600; /* Font weight for emphasis */
+}
+
 
 /* CONTACT */
 
@@ -423,7 +520,7 @@ article .icon {
 /* FOOTER SECTION */
 
 footer {
-  height: 26vh;
+  min-height: 26vh; /* Changed height to min-height */
   margin: 0 1rem;
 }
 
