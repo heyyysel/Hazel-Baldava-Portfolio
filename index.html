@@ -36,6 +36,7 @@
         </div>
       </div>
     </nav>
+
     <section id="profile">
       <div class="section__pic-container">
         <img src="./assets/profile-pic.png" alt="Hazel Baldava profile picture" />
@@ -45,51 +46,43 @@
         <h1 class="title">Hazel Baldava</h1>
         <p class="section__text__p2">Customer Service Representative | Computer Science Student</p>
         <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/resume-Hazel.pdf')"
-          >
-            Download Resume
-          </button>
-          <button class="btn btn-color-1" onclick="showContactInfo()">
-            Contact Information
-        </button>
+          <button class="btn btn-color-2" onclick="window.open('./assets/resume-Hazel.pdf')">Download Resume</button>
+          <button class="btn btn-color-1" onclick="showContactInfo()">Contact Information</button>
         </div>
         <div id="contactPopup" class="contact-popup" style="display: none;">
           <div class="contact-info-container">
-              <div class="contact-info-item">
-                  <span class="contact-icon">
-                      <img src="./assets/email.png" alt="Email Icon" class="email-icon" />
-                  </span>
-                  <p><a href="mailto:hazelbaldava016@gmail.com">hazelbaldava016@gmail.com</a></p>
-              </div>
-              <div class="contact-info-item">
-                  <span class="contact-icon">
-                      <img src="./assets/phone.png" alt="Phone Icon" class="phone-icon" />
-                  </span>
-                  <p><a href="tel:09764870858">09764870858</a></p>
-              </div>
-              <div>
-                  <button class="close-btn" onclick="hideContactInfo()">Close</button>
-              </div>
+            <div class="contact-info-item">
+              <span class="contact-icon">
+                <img src="./assets/email.png" alt="Email Icon" class="email-icon" />
+              </span>
+              <p><a href="mailto:hazelbaldava016@gmail.com">hazelbaldava016@gmail.com</a></p>
+            </div>
+            <div class="contact-info-item">
+              <span class="contact-icon">
+                <img src="./assets/phone.png" alt="Phone Icon" class="phone-icon" />
+              </span>
+              <p><a href="tel:09764870858">09764870858</a></p>
+            </div>
+            <div class="contact-info-item">
+              <span class="contact-icon">
+                <img src="./assets/github.png" alt="GitHub Icon" class="social-icon" />
+              </span>
+              <p><a href="https://github.com/heyyysel" target="_blank">GitHub</a></p>
+            </div>
+            <div class="contact-info-item">
+              <span class="contact-icon">
+                <img src="./assets/linkedin.png" alt="LinkedIn Icon" class="social-icon" />
+              </span>
+              <p><a href="https://www.facebook.com/heyseeeel/" target="_blank">Facebook</a></p>
+            </div>
+            <div>
+              <button class="close-btn" onclick="hideContactInfo()">Close</button>
+            </div>
           </div>
-        </div>      
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.facebook.com/heyseeeel/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/heyyysel'"
-          />
         </div>
       </div>
     </section>
+
     <section id="about">
       <p class="section__text__p1">Learn More</p>
       <h1 class="title">About My Journey</h1>
@@ -137,9 +130,10 @@
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#experience'"
+        onclick="scrollToSection('#experience')"
       />
     </section>
+
     <section id="experience">
       <p class="section__text__p1">Review My</p>
       <h1 class="title">Background</h1>
@@ -265,14 +259,14 @@
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#projects'"
+        onclick="scrollToSection('#projects')"
       />
     </section>
-   <section id="projects">
+
     <section id="projects">
       <div class="projects-header">
-          <p class="section__text__p1">Browse My Recent</p>
-          <h1 class="title">Projects</h1>
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
       </div>
       <div class="experience-details-container">
         <div class="about-containers">
@@ -291,6 +285,7 @@
                 onclick="location.href='https://github.com/heyyysel/Dungeon-Rush'"
               >
                 Github
+              </button>
             </div>
           </div>
           <div class="details-container color-container">
@@ -308,18 +303,18 @@
                 onclick="location.href='https://github.com/heyyysel/Youth-Saver'"
               >
                 Github
+              </button>
             </div>
-          </div>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
     </section>
+    <img
+    src="./assets/arrow.png"
+    alt="Arrow icon"
+    class="icon arrow"
+    onclick="scrollToSection('#contact')"
+  />
     <section id="contact">
       <p class="section__text__p1">Connect With Me</p>
       <h1 class="title">Reach out anytime</h1>
@@ -338,7 +333,7 @@
             alt="LinkedIn icon"
             class="icon contact-icon"
           />
-          <p><a href="https://www.facebook.com/heyseeeel/">Facebook</a></p>
+          <p><a href="https://www.facebook.com/heyseeeel" target="_blank">Facebook</a></p>
         </div>
       </div>
     </section>
@@ -357,5 +352,5 @@
       <p>Copyright &#169; 2024 Hazel Baldava. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
-    </body>
-    </html>
+  </body>
+</html>
