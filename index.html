@@ -24,9 +24,9 @@
       <div class="logo">Hazel Baldava</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
         </div>
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
@@ -38,47 +38,18 @@
     </nav>
 
     <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="Hazel Baldava profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Hazel Baldava</h1>
-        <p class="section__text__p2">Customer Service Representative | Computer Science Student</p>
-        <div class="btn-container">
-          <button class="btn btn-color-2" onclick="window.open('./assets/resume-Hazel.pdf')">Download Resume</button>
-          <button class="btn btn-color-1" onclick="showContactInfo()">Contact Information</button>
-        </div>
-        <div id="contactPopup" class="contact-popup" style="display: none;">
-          <div class="contact-info-container">
-            <div class="contact-info-item">
-              <span class="contact-icon">
-                <img src="./assets/email.png" alt="Email Icon" class="email-icon" />
-              </span>
-              <p><a href="mailto:hazelbaldava016@gmail.com">hazelbaldava016@gmail.com</a></p>
-            </div>
-            <div class="contact-info-item">
-              <span class="contact-icon">
-                <img src="./assets/phone.png" alt="Phone Icon" class="phone-icon" />
-              </span>
-              <p><a href="tel:09764870858">09764870858</a></p>
-            </div>
-            <div class="contact-info-item">
-              <span class="contact-icon">
-                <img src="./assets/github.png" alt="GitHub Icon" class="social-icon" />
-              </span>
-              <p><a href="https://github.com/heyyysel" target="_blank">GitHub</a></p>
-            </div>
-            <div class="contact-info-item">
-              <span class="contact-icon">
-                <img src="./assets/linkedin.png" alt="LinkedIn Icon" class="social-icon" />
-              </span>
-              <p><a href="https://www.facebook.com/heyseeeel/" target="_blank">Facebook</a></p>
-            </div>
-            <div>
-              <button class="close-btn" onclick="hideContactInfo()">Close</button>
-            </div>
+      <div class="profile-container">
+        <div class="section__text">
+          <p class="section__text__p1">Hi There 👋,</p>
+          <h1 class="title">I'm Hazel Baldava</h1>
+          <p class="section__text__p2">Customer Service Representative | Computer Science Student</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2" onclick="window.open('./assets/resume-Hazel.pdf')">Download Resume</button>
+            <button class="btn btn-color-1" onclick="showContactInfo()">Contact Information</button>
           </div>
+        </div>
+        <div class="section__pic-container">
+          <img src="./assets/profile-pic.png" alt="Hazel Baldava profile picture" />
         </div>
       </div>
     </section>
