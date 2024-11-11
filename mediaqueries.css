@@ -1,301 +1,103 @@
-/* Media query for screens smaller than 1400px */
 @media screen and (max-width: 1400px) {
   #profile {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    margin-bottom: 4rem;
-    padding: 2rem;
+    height: 83vh;
+    margin-bottom: 6rem;
   }
-
-  .section__pic-container {
-    width: 250px;
-    height: 250px;
-    margin: 0 auto;
-    transition: transform 0.3s ease; /* Hover effect on profile picture */
-  }
-
-  .section__pic-container:hover {
-    transform: scale(1.05); /* Hover scale effect */
-  }
-
-  .section__text {
-    font-size: 1.5rem;
-    text-align: center;
-    margin-top: 1rem;
-  }
-
   .about-containers {
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
   }
-
-  #contact, #projects {
+  #contact,
+  #projects {
     height: fit-content;
-    padding: 1rem 2rem;
-  }
-
-  /* Experience Section Adjustments */
-  #experience {
-    padding-top: 2vh; /* Adjust padding for small screens */
-  }
-
-  .experience-container {
-    padding-left: 20px; /* Reduce left padding */
-    max-width: 700px; /* Limit max width */
-    opacity: 0;
-    transform: translateY(30px); /* Initial off-screen position */
-    animation: fadeInUp 0.8s forwards; /* Animation when scrolling into view */
-  }
-
-  .experience-item {
-    opacity: 0;
-    transform: translateX(-30px); /* Initial off-screen position */
-    animation: slideInLeft 0.6s forwards;
-  }
-
-  .timeline-circle {
-    width: 18px; /* Adjust size of circles */
-    height: 18px;
-    left: -30px; /* Adjust position of circles */
-    transition: transform 0.3s ease;
-  }
-
-  .timeline-circle:hover {
-    transform: scale(1.2); /* Hover effect on the circle */
-  }
-
-  .experience-content {
-    padding-left: 30px; /* Adjust content box padding */
-    transition: background-color 0.3s ease; /* Smooth background color transition */
-  }
-
-  .experience-content:hover {
-    background-color: #d285a3; /* Change background color on hover */
-    transform: scale(1.02); /* Slight scale effect */
   }
 }
 
-/* Media query for screens smaller than 1200px */
 @media screen and (max-width: 1200px) {
   #desktop-nav {
     display: none;
   }
-
   #hamburger-nav {
     display: flex;
-    justify-content: space-between;
-    padding: 1rem;
   }
-
-  #experience, .experience-details-container {
+  #experience,
+  .experience-details-container {
     margin-top: 2rem;
   }
-
-  #profile {
-    flex-direction: column;
-    padding: 2rem;
-    height: auto;
-    margin-bottom: 3rem;
+  #profile,
+  .section-container {
+    display: block;
   }
-
-  .section__pic-container {
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
-    transition: transform 0.3s ease; /* Hover effect on profile picture */
+  .arrow {
+    display: none;
   }
-
-  .section__pic-container:hover {
-    transform: scale(1.05); /* Hover scale effect */
-  }
-
-  .section__text {
-    font-size: 1.3rem;
-    text-align: center;
-    margin-top: 1rem;
-  }
-
-  section, .section-container {
+  section,
+  .section-container {
     height: fit-content;
-    padding: 0 5%;
   }
-
+  section {
+    margin: 0 5%;
+  }
+  .section__pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
   .about-containers {
     margin-top: 0;
-    justify-content: center;
-    gap: 1.5rem;
-  }
-
-  /* Experience Section Adjustments */
-  #experience {
-    padding-top: 2vh;
-  }
-
-  .experience-container {
-    padding-left: 20px;
-    max-width: 600px;
-    opacity: 0;
-    transform: translateY(30px);
-    animation: fadeInUp 0.8s forwards; /* Animation when scrolling into view */
-  }
-
-  .experience-item {
-    opacity: 0;
-    transform: translateX(-30px);
-    animation: slideInLeft 0.6s forwards;
-  }
-
-  .timeline-circle {
-    width: 18px;
-    height: 18px;
-    left: -25px;
-    transition: transform 0.3s ease;
-  }
-
-  .timeline-circle:hover {
-    transform: scale(1.2); /* Hover effect on the circle */
-  }
-
-  .experience-content {
-    padding-left: 35px;
-    transition: background-color 0.3s ease;
-  }
-
-  .experience-content:hover {
-    background-color: #d285a3;
-    transform: scale(1.02); /* Slight scale effect */
   }
 }
 
-/* Media query for screens smaller than 600px */
 @media screen and (max-width: 600px) {
-  /* Profile Section Adjustments */
+  #contact,
+  footer {
+    height: 40vh;
+  }
   #profile {
-    flex-direction: column;
-    padding: 1rem;
-    height: auto;
-    margin-bottom: 2rem;
-    text-align: center;
+    height: 83vh;
+    margin-bottom: 0;
   }
-
-  /* Reorder elements: image first, then text */
-  .profile-container, .section-container {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-
-  .section__pic-container {
-    width: 150px;
-    height: 150px;
-    margin: 0 auto;
-  }
-
-  .section__pic-container img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    transition: transform 0.3s ease; /* Hover effect on profile picture */
-  }
-
-  .section__pic-container img:hover {
-    transform: scale(1.05); /* Hover scale effect */
-  }
-
-  /* Text adjustments for readability */
-  .section__text__p1, .section__text__p2, .title {
-    font-size: 1.25rem;
-    text-align: center;
-  }
-
-  .section__text__p2 {
+  article {
     font-size: 1rem;
+  }
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+  .contact-info-container {
+    margin: 0;
+  }
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+  }
+  .experience-sub-title {
+    font-size: 1.25rem;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
     text-align: center;
   }
-
-  #contact {
-    padding: 2rem 1rem;
+  .section__pic-container {
+    width: auto;
+    height: 46vw;
+    justify-content: center;
   }
-
-  .contact-form {
-    width: 90%;
+  .section__text__p2 {
+    font-size: 1.25rem;
   }
-
-  /* Experience Section Adjustments */
-  #experience {
-    padding-top: 2vh;
+  .title {
+    font-size: 2rem;
   }
-
-  .experience-container {
-    padding-left: 10px;
-    max-width: 100%;
-    opacity: 0;
-    transform: translateY(30px);
-    animation: fadeInUp 0.8s forwards; /* Animation when scrolling into view */
-  }
-
-  .experience-item {
-    opacity: 0;
-    transform: translateX(-30px);
-    animation: slideInLeft 0.6s forwards;
-  }
-
-  .timeline-circle {
-    width: 16px;
-    height: 16px;
-    left: -20px;
-    transition: transform 0.3s ease;
-  }
-
-  .timeline-circle:hover {
-    transform: scale(1.2); /* Hover effect on the circle */
-  }
-
-  .experience-content {
-    padding-left: 25px;
-    transition: background-color 0.3s ease;
-  }
-
-  .experience-content:hover {
-    background-color: #d285a3;
-    transform: scale(1.02); /* Slight scale effect */
-  }
-}
-
-footer {
-  padding: 2rem 1rem;
-  text-align: center;
-}
-
-.nav-links {
-  flex-direction: column;
-  gap: 0.5rem;
-  text-align: center;
-}
-
-/* Keyframe animations for effects */
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes slideInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
+  .text-container {
+    text-align: justify;
   }
 }

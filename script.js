@@ -4,8 +4,8 @@ function toggleMenu() {
   const icon = document.querySelector(".hamburger-icon");
 
   if (menu && icon) {
-    menu.classList.toggle("open");
-    icon.classList.toggle("open");
+    menu.classList.toggle("open"); // Toggle the visibility of the menu
+    icon.classList.toggle("open"); // Toggle the hamburger icon style (optional)
 
     // Smoothly open the menu
     menu.style.maxHeight = menu.classList.contains("open") ? `${menu.scrollHeight}px` : "0";
