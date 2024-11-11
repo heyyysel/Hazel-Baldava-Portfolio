@@ -1,15 +1,8 @@
-// Toggle Menu: Opens and closes the hamburger menu with smooth animation
 function toggleMenu() {
   const menu = document.querySelector(".menu-links");
   const icon = document.querySelector(".hamburger-icon");
-
-  if (menu && icon) {
-    menu.classList.toggle("open"); // Toggle the visibility of the menu
-    icon.classList.toggle("open"); // Toggle the hamburger icon style (optional)
-
-    // Smoothly open the menu
-    menu.style.maxHeight = menu.classList.contains("open") ? `${menu.scrollHeight}px` : "0";
-  }
+  menu.classList.toggle("open");
+  icon.classList.toggle("open");
 }
 
 // Smooth Scrolling to Section: Scrolls smoothly to the specified section

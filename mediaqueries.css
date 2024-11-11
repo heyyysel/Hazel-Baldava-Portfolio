@@ -1,103 +1,129 @@
+/* For screens smaller than or equal to 1400px */
 @media screen and (max-width: 1400px) {
   #profile {
-    height: 83vh;
-    margin-bottom: 6rem;
+    height: 83vh; /* Reduced height for better view on medium-sized screens */
+    margin-bottom: 6rem; /* More space below the profile */
   }
+
   .about-containers {
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Allow containers to wrap in smaller space */
   }
+
   #contact,
   #projects {
-    height: fit-content;
+    height: fit-content; /* Adjust height to fit content */
   }
 }
 
+/* For screens smaller than or equal to 1200px */
 @media screen and (max-width: 1200px) {
   #desktop-nav {
-    display: none;
+    display: none; /* Hide desktop navigation */
   }
+
   #hamburger-nav {
-    display: flex;
+    display: flex; /* Show hamburger menu for smaller screens */
   }
+
   #experience,
   .experience-details-container {
-    margin-top: 2rem;
+    margin-top: 2rem; /* Add margin to separate experience section */
   }
+
   #profile,
   .section-container {
-    display: block;
+    display: block; /* Change profile and section layout to block */
   }
+
   .arrow {
-    display: none;
+    display: none; /* Hide arrow icon on smaller screens */
   }
+
   section,
   .section-container {
-    height: fit-content;
+    height: fit-content; /* Allow sections to adjust to their content */
   }
+
   section {
-    margin: 0 5%;
+    margin: 0 5%; /* Add margin to sections */
   }
+
   .section__pic-container {
-    width: 275px;
+    width: 275px; /* Adjust image size */
     height: 275px;
-    margin: 0 auto 2rem;
+    margin: 0 auto 2rem; /* Center image with margin at the bottom */
   }
+
   .about-containers {
-    margin-top: 0;
+    margin-top: 0; /* Remove margin-top for consistency */
   }
 }
 
+/* For screens smaller than or equal to 600px */
 @media screen and (max-width: 600px) {
   #contact,
   footer {
-    height: 40vh;
+    height: 40vh; /* Reduce height for contact and footer */
   }
+
   #profile {
-    height: 83vh;
-    margin-bottom: 0;
+    height: 83vh; /* Maintain profile height for mobile */
+    margin-bottom: 0; /* Remove margin at the bottom */
   }
+
   article {
-    font-size: 1rem;
+    font-size: 1rem; /* Adjust font size for readability */
   }
+
   footer nav {
-    height: fit-content;
-    margin-bottom: 2rem;
+    height: fit-content; /* Adjust footer navigation height */
+    margin-bottom: 2rem; /* Add space at the bottom */
   }
+
   .about-containers,
   .contact-info-upper-container,
   .btn-container {
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Wrap items in containers */
   }
+
   .contact-info-container {
-    margin: 0;
+    margin: 0; /* Remove margin */
   }
+
   .contact-info-container p,
   .nav-links li a {
-    font-size: 1rem;
+    font-size: 1rem; /* Adjust font size for smaller screens */
   }
+
   .experience-sub-title {
-    font-size: 1.25rem;
+    font-size: 1.25rem; /* Adjust subtitle size */
   }
+
   .logo {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* Adjust logo size */
   }
+
   .nav-links {
-    flex-direction: column;
-    gap: 0.5rem;
-    text-align: center;
+    flex-direction: column; /* Stack nav links vertically */
+    gap: 0.5rem; /* Space out links */
+    text-align: center; /* Center align links */
   }
+
   .section__pic-container {
-    width: auto;
-    height: 46vw;
-    justify-content: center;
+    width: auto; /* Allow image container to adjust width */
+    height: 46vw; /* Maintain aspect ratio for smaller screens */
+    justify-content: center; /* Center image vertically */
   }
+
   .section__text__p2 {
-    font-size: 1.25rem;
+    font-size: 1.25rem; /* Adjust font size for section text */
   }
+
   .title {
-    font-size: 2rem;
+    font-size: 2rem; /* Adjust title size for readability */
   }
+
   .text-container {
-    text-align: justify;
+    text-align: justify; /* Justify text for better mobile readability */
   }
 }
