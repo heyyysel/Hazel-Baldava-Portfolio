@@ -110,12 +110,14 @@
     text-align: center;
   }
 
-  /* About and Contact Sections */
-  .about-containers, .contact-info-upper-container, .btn-container {
-    flex-wrap: wrap;
-    padding: 0 1rem;
-    justify-content: center;
+  #contact {
+    padding: 2rem 1rem;
   }
+
+  .contact-form {
+    width: 90%;
+  }
+}
 
   /* Footer and other adjustments */
   footer {

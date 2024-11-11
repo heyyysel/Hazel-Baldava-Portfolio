@@ -2,18 +2,13 @@
 function toggleMenu() {
   const menu = document.querySelector(".menu-links");
   const icon = document.querySelector(".hamburger-icon");
-  
+
   if (menu && icon) {
-    // Toggle 'open' class for both menu and icon
     menu.classList.toggle("open");
     icon.classList.toggle("open");
 
-    // Adjust max-height for smooth open/close transition
-    if (menu.classList.contains("open")) {
-      menu.style.maxHeight = `${menu.scrollHeight}px`;
-    } else {
-      menu.style.maxHeight = "0";
-    }
+    // Smoothly open the menu
+    menu.style.maxHeight = menu.classList.contains("open") ? `${menu.scrollHeight}px` : "0";
   }
 }
 
@@ -33,7 +28,7 @@ function showContactInfo() {
   const contactPopup = document.getElementById('contactPopup');
   
   if (contactPopup) {
-    contactPopup.style.display = 'flex';
+    contactPopup.style.display = 'flex'; // Show the popup
   }
 }
 
@@ -42,20 +37,31 @@ function hideContactInfo() {
   const contactPopup = document.getElementById('contactPopup');
   
   if (contactPopup) {
-    contactPopup.style.display = 'none';
+    contactPopup.style.display = 'none'; // Hide the popup
+  }
+}
+
+// Close popup when clicked outside
+function closePopupOnClickOutside(event) {
+  const contactPopup = document.getElementById('contactPopup');
+  if (contactPopup && !contactPopup.contains(event.target)) {
+    contactPopup.style.display = 'none'; // Close popup if clicked outside
   }
 }
 
 // Event listeners for menu toggle and contact button
 document.addEventListener('DOMContentLoaded', () => {
   const menuButton = document.querySelector(".hamburger-icon");
-  const contactButton = document.querySelector(".btn.btn-color-1");
+  const contactButton = document.querySelector(".btn.btn-color-1"); // Ensure this is the correct button
 
   if (menuButton) {
     menuButton.addEventListener("click", toggleMenu);
   }
   
   if (contactButton) {
-    contactButton.addEventListener("click", showContactInfo);
+    contactButton.addEventListener("click", showContactInfo); // Open contact popup
   }
+
+  // Add event listener for closing the contact popup when clicked outside
+  document.addEventListener("click", closePopupOnClickOutside);
 });
