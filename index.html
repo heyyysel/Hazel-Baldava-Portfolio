@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <title>Hazel Baldava Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
+    <link href="style.css" rel="stylesheet"/>
+    <link href="mediaqueries.css" rel="stylesheet"/>
     <style>
       .title {
         color: #4a148c; /* Dark purple color */
@@ -22,9 +22,11 @@
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href="#maintenance">Updates</a></li>
         </ul>
       </div>
     </nav>
+
     <nav id="hamburger-nav">
       <div class="logo">Hazel Baldava</div>
       <div class="hamburger-menu">
@@ -38,6 +40,7 @@
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li><a href="#maintenance" onclick="toggleMenu()">Updates</a></li>
         </div>
       </div>
     </nav>
@@ -46,23 +49,23 @@
       <div class="profile-container">
         <div class="section__text">
           <p class="section__text__p1">Hi There 👋,</p>
-          <h1 class="title">I'm Hazel Baldava</h1> 
+          <h1 class="title">I'm Hazel Baldava</h1>
           <p class="section__text__p2">Customer Service Representative  Computer Science Student</p>
           <div class="btn-container">
             <button class="btn btn-color-2" onclick="window.open('./assets/resume-Hazel.pdf')">Download Resume</button>
             <button class="btn btn-color-1" onclick="showContactInfo()">Contact Information</button>
           </div>
-          <div id="contact-info" class="contact-info" style="display: none;">
+          <div class="contact-info" id="contact-info" style="display: none;">
             <p><strong>Email:</strong> <a href="mailto:hazelbaldava016@gmail.com">hazelbaldava016@gmail.com</a></p>
             <p><strong>Facebook:</strong> <a href="https://www.facebook.com/heyseeeel" target="_blank">Facebook.com/Hazel</a></p>
             <p><strong>Phone Number:</strong> <a href="tel:+639764870858">09764870858</a></p>
           </div>
         </div>
         <div class="section__pic-container">
-          <img src="./assets/profile-pic.png" alt="Hazel Baldava profile picture" />
+          <img alt="Profile picture of Hazel Baldava" src="./assets/profile-pic.png"/>
         </div>
       </div>
-    </section> 
+    </section>
 
     <section id="about">
       <div class="about-header">
@@ -80,7 +83,7 @@
                 <p>Las Piñas East National High School- Talon Village Annex</p>
               </div>
             </div>
-          </div> 
+          </div>
           <div class="timeline">
             <div class="timeline-item">
               <div class="timeline-circle">2017</div>
@@ -96,7 +99,7 @@
                 <p>Cavite State University- Bacoor Campus</p>
               </div>
             </div>
-          </div> 
+          </div>
         </div>
         <div class="details-container">
           <h3>My Skills</h3>
@@ -139,9 +142,9 @@
             </div>
           </div>
         </div>
-      </div> 
+      </div>
       <div class="arrow-wrapper">
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="scrollToSection('#experience')" />
+        <img alt="Arrow icon" class="icon arrow" onclick="scrollToSection('#experience')" src="./assets/arrow.png"/>
       </div>
     </section>
 
@@ -152,7 +155,7 @@
       </div>
       <div class="experience-container">
         <div class="experience-item">
-          <img src="assets/experience.png" alt="Icon" class="experience-icon">
+          <img alt="Experience icon" class="experience-icon" src="assets/experience.png"/>
           <div class="experience-content">
             <h4>May 2019 - October 2020</h4>
             <p>Alorica</p>
@@ -160,15 +163,15 @@
           </div>
         </div>
         <div class="experience-item">
-          <img src="assets/experience.png" alt="Icon" class="experience-icon">
+          <img alt="Experience icon" class="experience-icon" src="assets/experience.png"/>
           <div class="experience-content">
             <h4>October 2020 - November 2023</h4>
             <p>Concentrix</p>
-            <p class="experience-description">Mediating between buyers and sellers, helping them resolve disputes or other concerns with their transactions. </p>
+            <p class="experience-description">Mediating between buyers and sellers, helping them resolve disputes or other concerns with their transactions.</p>
           </div>
         </div>
         <div class="experience-item">
-          <img src="assets/experience.png" alt="Icon" class="experience-icon">
+          <img alt="Experience icon" class="experience-icon" src="assets/experience.png"/>
           <div class="experience-content">
             <h4>November 2023 - Present</h4>
             <p>Concentrix</p>
@@ -177,7 +180,7 @@
         </div>
       </div>
       <div class="arrow-wrapper">
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="scrollToSection('#projects')" />
+        <img alt="Arrow icon" class="icon arrow" onclick="scrollToSection('#projects')" src="./assets/arrow.png"/>
       </div>
     </section>
 
@@ -190,7 +193,7 @@
         <div class="about-containers">
           <div class="details-container color-container">
             <div class="article-container">
-              <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+              <img alt="Dungeon Rush project" class="project-img" src="./assets/project-1.png"/>
             </div>
             <h2 class="experience-sub-title project-title">Dungeon Rush</h2>
             <div class="btn-container">
@@ -199,7 +202,7 @@
           </div>
           <div class="details-container color-container">
             <div class="article-container">
-              <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
+              <img alt="Youth Saver project" class="project-img" src="./assets/project-2.png"/>
             </div>
             <h2 class="experience-sub-title project-title">Youth Saver</h2>
             <div class="btn-container">
@@ -209,7 +212,7 @@
         </div>
       </div>
       <div class="arrow-wrapper">
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="scrollToSection('#contact')" />
+        <img alt="Arrow icon" class="icon arrow" onclick="scrollToSection('#contact')" src="./assets/arrow.png"/>
       </div>
     </section>
 
@@ -219,45 +222,76 @@
           <!-- Left Side with Contact Info -->
           <div class="left-side">
             <div class="details">
-              <img src="assets/location.png" alt="Location Icon" class="contact-icon">
+              <img alt="Location Icon" class="contact-icon" src="assets/location.png"/>
               <div class="topic">Address</div>
               <div class="text-one">San Nicolas III Bacoor City, Cavite</div>
             </div>
             <div class="details">
-              <img src="assets/phone.png" alt="Phone Icon" class="contact-icon">
+              <img alt="Phone Icon" class="contact-icon" src="assets/phone.png"/>
               <div class="topic">Phone</div>
               <div class="text-one">
-                <a href="tel:+639764870858" class="clickable-phone">+639764870858</a>
+                <a class="clickable-phone" href="tel:+639764870858">+639764870858</a>
               </div>
             </div>
             <div class="details">
-              <img src="assets/email.png" alt="Email Icon" class="contact-icon">
+              <img alt="Email Icon" class="contact-icon" src="assets/email.png"/>
               <div class="topic">Email</div>
               <div class="text-one">
-                <a href="mailto:hazelbaldava016@gmail.com" class="clickable-email">hazelbaldava016@gmail.com</a>
+                <a class="clickable-email" href="mailto:hazelbaldava016@gmail.com">hazelbaldava016@gmail.com</a>
               </div>
             </div>
           </div>
-    
           <!-- Right Side with Form -->
           <div class="right-side">
             <h2 class="section-title">Get in touch</h2>
-            <form name="contact" method="POST" data-netlify="true">
-              <input type="hidden" name="form-name" value="contact" />
+            <form data-netlify="true" method="POST" name="contact">
+              <input name="form-name" type="hidden" value="contact"/>
               <div class="input-box">
-                <input type="text" name="name" placeholder="Enter your name" required>
+                <input name="name" placeholder="Enter your name" required="" type="text"/>
               </div>
               <div class="input-box">
-                <input type="email" name="email" placeholder="Enter your email" required>
+                <input name="email" placeholder="Enter your email" required="" type="email"/>
               </div>
               <div class="input-box message-box">
-                <textarea name="message" placeholder="Enter your message" required></textarea>
+                <textarea name="message" placeholder="Enter your message" required=""></textarea>
               </div>
               <div class="button">
-                <button type="submit" class="submit-btn">Send Now</button>
+                <button class="submit-btn" type="submit">Send Now</button>
               </div>
             </form>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="maintenance">
+      <div id="maintenance">
+        <div class="maintenance-card">
+          <div class="icon-container">
+            <img src="assets/update.png" alt="Icon" class="maintenance-icon">
+          </div>
+          <h2>Content Updates</h2>
+          <p><b>New Projects:</b> Regularly add new projects to showcase recent work and skills. Update project links and descriptions to reflect the latest achievements.</p>
+          <p><b>Skill Adjustments:</b> Modify skill bars as your expertise grows. For instance, if you gain proficiency in a new technology, add it to the "My Skills" section.</p>
+          <p><b>Experience Updates:</b> Keep your employment history current by adding new positions or updating details for existing roles.</p>
+        </div>
+
+        <div class="maintenance-card">
+          <div class="icon-container">
+            <img src="assets/update.png" alt="Icon" class="maintenance-icon">
+          </div>
+          <h2>Design and User Interface Enhancements</h2>
+          <p><b>Visual Refreshes:</b> Periodically adjust colors, fonts, and layout to maintain a modern look. For example, you could update the background color, button styles, or animation effects.</p>
+          <p><b>Responsive Design Check:</b> Ensure that the media queries remain up-to-date as you add new content or make structural changes. This will keep the site looking polished on all screen sizes.</p>
+        </div>
+
+        <div class="maintenance-card">
+          <div class="icon-container">
+            <img src="assets/update.png" alt="Icon" class="maintenance-icon">
+          </div>
+          <h2>Functional Maintenance</h2>
+          <p><b>Contact Information:</b> Confirm that email, phone number, and social media links are accurate and accessible. Update any changes directly in your HTML and JavaScript files.</p>
+          <p><b>Performance Optimization:</b> Regularly review the CSS and JavaScript to optimize load times. You could condense or remove unused styles in style.css, mediaqueries.css, and script.js​(style)​(script)​(mediaqueries)​(index).</p>
         </div>
       </div>
     </section>
@@ -273,9 +307,8 @@
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2024 Hazel Baldava. All Rights Reserved.</p>
-    </footer>    
-
+      <p>Copyright © 2024 Hazel Baldava. All Rights Reserved.</p>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
