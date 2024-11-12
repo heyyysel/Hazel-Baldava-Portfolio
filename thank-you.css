@@ -3,21 +3,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  /* Body Styling */
-  body {
+}
+
+/* Body Styling */
+body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(to top right, #f7e1d7, #e5c9d7); /* Soft gradient background */
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    padding: 0 1rem; /* Add some padding on smaller screens */
-  }
-  
-  /* Section Container */
-  #thank-you {
+    padding: 0 1rem;
+}
+
+/* Section Container */
+#thank-you {
     width: 100%;
     max-width: 800px;
     margin: auto;
@@ -27,74 +27,52 @@
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
     text-align: center;
     animation: fadeIn 0.5s ease-in-out;
-  }
-  
-  /* Header Styling */
-  h1 {
+}
+
+/* Header Styling */
+h1 {
     font-size: 3rem;
     font-weight: 700;
-    color: #4a148c; /* Dark purple for the heading */
+    color: #4a148c;
     margin-bottom: 1rem;
     letter-spacing: 1px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
-  }
-  
-  /* Paragraph Styling */
-  p {
+}
+
+/* Paragraph Styling */
+p {
     font-size: 1.25rem;
-    color: #4f4f4f; /* Text color */
+    color: #4f4f4f;
     margin-bottom: 2rem;
     line-height: 1.6;
-  }
-  
-  /* Button Styling */
-  a.back-home {
+}
+
+/* Button Styling */
+a.back-home {
     font-size: 1.1rem;
     font-weight: 600;
     padding: 1rem 2.5rem;
-    background-color: #6a42f4; /* Purple button */
+    background-color: #6a42f4;
     color: #ffffff;
     text-decoration: none;
-    border-radius: 15px; /* Rounder button */
+    border-radius: 15px;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1); /* Button shadow */
-  }
-  
-  a.back-home:hover {
-    background-color: #4a148c; /* Darker purple on hover */
-    transform: translateY(-3px); /* Slightly lift the button on hover */
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    #thank-you {
-      padding: 1.5rem;
-      width: 90%;
-    }
-  
-    h1 {
-      font-size: 2.5rem; /* Adjust heading size for smaller screens */
-    }
-  
-    p {
-      font-size: 1.1rem; /* Adjust paragraph size for smaller screens */
-    }
-  
-    a.back-home {
-      font-size: 1rem;
-      padding: 0.8rem 2rem;
-    }
-  }
-  
-  /* Keyframe Animation for Fade In */
-  @keyframes fadeIn {
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+a.back-home:hover {
+    background-color: #4a148c;
+    transform: translateY(-3px);
+}
+
+/* Keyframe Animation for Fade In */
+@keyframes fadeIn {
     0% {
-      opacity: 0;
-      transform: translateY(30px);
+        opacity: 0;
+        transform: translateY(30px);
     }
     100% {
-      opacity: 1;
-      transform: translateY(0);
+        opacity: 1;
+        transform: translateY(0);
     }
-  }
-  
+}
