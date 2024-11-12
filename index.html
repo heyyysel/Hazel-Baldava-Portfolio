@@ -6,7 +6,6 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <title>Hazel Baldava Portfolio</title>
     <link href="style.css" rel="stylesheet"/>
-    <script src="script.js"></script>
     <link href="mediaqueries.css" rel="stylesheet"/>
     <style>
       .title {
@@ -243,8 +242,10 @@
           </div>
           <div class="right-side">
             <h2 class="section-title">Get in touch</h2>
+            <!-- Updated form -->
             <form data-netlify="true" method="POST" name="contact">
-              <input name="form-name" type="hidden" value="contact"/>
+              <input name="form-name" type="hidden" value="contact" />
+              <input type="hidden" name="redirect" value="/thank-you.html"> <!-- Redirect to thank you page -->
               <div class="input-box">
                 <input name="name" placeholder="Enter your name" required="" type="text"/>
               </div>
