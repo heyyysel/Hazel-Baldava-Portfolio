@@ -32,3 +32,10 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 3000);
   }
 });
+  const hamburgerIcon = document.querySelector('.hamburger-icon');
+  const navLinks = document.querySelector('.nav-links');
+
+  hamburgerIcon.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    hamburgerIcon.classList.toggle('open');
+  });
