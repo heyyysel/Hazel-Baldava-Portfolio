@@ -23,3 +23,12 @@ function scrollToSection(sectionId) {
     });
   }
 }
+document.addEventListener('DOMContentLoaded', function () {
+  if (window.location.pathname === '/thank-you.html') {
+    // Check if we're on the thank you page (you can also use local storage or URL parameters to track form submission)
+    setTimeout(function () {
+      // This will redirect to the desired page after 3 seconds (adjust as needed)
+      window.location.href = '/thank-you.html';
+    }, 3000);
+  }
+});
