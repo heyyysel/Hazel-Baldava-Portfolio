@@ -743,8 +743,8 @@ section {
 /* contact */
 #contact {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; /* Center the content horizontally */
+  align-items: flex-start;
   padding: 3rem;
   background-color: #f7e1d7; /* Soft pink background */
   border-radius: 1rem;
@@ -755,44 +755,29 @@ section {
 
 .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* Center the container content */
   width: 100%;
-  gap: 3rem;
 }
 
 .content {
-  display: flex;
-  width: 100%;
-  gap: 2rem;
-}
-
-.left-side {
-  flex: 0; 
-  background-color: #fff;
+  width: 60%; /* Allocate 60% width for the form */
   padding: 2rem;
+  background-color: #fff;
   border-radius: 1rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+  margin: 0 auto; /* Horizontally center the content box */
+  box-sizing: border-box; /* Ensure padding does not affect width */
 }
 
-.details {
-  margin-bottom: 2rem;
-}
-
-.details .topic {
-  font-weight: 600;
-  font-size: 1.1rem;
-  margin-top: 0.5rem;
-}
-
-.details .text-one,
-.details .text-two {
-  color: #6a6a6a;
-}
-
-.contact-icon {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
+.contact-info {
+  width: 35%; /* Allocate 35% width for contact info */
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-left: auto;
+  margin-right: auto; /* Center contact info box */
+  box-sizing: border-box; /* Ensure padding does not affect width */
 }
 
 .section-title {
@@ -821,6 +806,7 @@ section {
   border-radius: 1rem;
   font-size: 1rem;
   transition: all 0.3s ease;
+  box-sizing: border-box; /* Ensure padding does not affect width */
 }
 
 .input-box input:focus,
@@ -830,15 +816,16 @@ section {
 }
 
 .message-box textarea {
-  width: 100%;          /* Takes up 100% of the available width */
+  width: 100%; /* Takes up 100% of the available width */
   padding: 1rem;
   border: 1px solid #4c2b9d;
   border-radius: 1rem;
   font-size: 1rem;
   transition: all 0.3s ease;
   resize: vertical; /* Allow vertical resize only */
-  min-height: 150px;  /* Minimum height for better visibility */
-  max-height: 300px;  /* Maximum height to avoid growing too large */
+  min-height: 150px; /* Minimum height for better visibility */
+  max-height: 300px; /* Maximum height to avoid growing too large */
+  box-sizing: border-box; /* Ensure padding does not affect width */
 }
 
 .submit-btn {
@@ -850,10 +837,10 @@ section {
   border-radius: 2rem;
   cursor: pointer;
   transition: all 0.3s ease;
-  width: fit-content;  /* Fit the width to the content */
-  margin: 0 auto;      /* Center the button */
-  display: block;      /* Make it a block element to apply auto margins */
-  text-align: center;  /* Ensure the text is centered */
+  width: fit-content; /* Fit the width to the content */
+  margin: 0 auto; /* Center the button */
+  display: block; /* Make it a block element to apply auto margins */
+  text-align: center; /* Ensure the text is centered */
 }
 
 .submit-btn:hover {
@@ -868,25 +855,7 @@ section {
   outline: none;
 }
 
-/* Adjustments for the contact-info section */
-.contact-info {
-  margin-top: 2rem;
-  padding: 2rem;
-  background-color: #f7e1d7; /* Soft pink background */
-  border-radius: 1rem;
-  border: 1px solid #d1d1d1;
-  text-align: center;
-  width: 40%; /* Reduce the width to make it smaller */
-  max-width: 600px;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-  transition: all 0.3s ease-in-out;
-  margin-bottom: 2rem; /* Adds space below */
-}
-
-.contact-info:hover {
-  transform: scale(1.05); /* Slightly enlarge on hover */
-}
-
+/* Contact Info Styling */
 .contact-info p {
   font-size: 1rem;
   color: #4f4f4f;
@@ -916,41 +885,37 @@ section {
   border-bottom: 2px solid #4c6ef5; /* Add border when focused */
 }
 
-/* Responsive design adjustments */
-@media (max-width: 768px) {
-  #contact {
-    padding: 2rem; /* Adjust padding on smaller screens */
-  }
+/* Adjusting icons and contact info layout */
+.details {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
 
-  .container {
-    flex-direction: column; /* Stack the left and right sides on smaller screens */
-    gap: 1rem;
-  }
+.contact-icon {
+  width: 30px; /* Adjust icon size */
+  height: 30px; /* Ensure the icon maintains aspect ratio */
+  margin-right: 1rem; /* Space between icon and text */
+}
 
-  .right-side {
-    flex: 1; /* Allow both sides to take equal width on small screens */
-    width: 100%;
-    padding: 1.5rem; /* Adjust padding for smaller screens */
-  }
+.topic {
+  font-weight: bold;
+  color: #4a148c;
+}
 
-  .section-title {
-    font-size: 2rem; /* Adjust section title size */
-  }
+.text-one {
+  color: #6a6a6a;
+}
 
-  .contact-info {
-    margin-top: 1rem;
-    max-width: 100%; /* Allow the contact info to be full width */
-  }
+.clickable-phone,
+.clickable-email {
+  color: #6a42f4;
+  text-decoration: none;
+}
 
-  .submit-btn {
-    width: 100%; /* Ensure button takes up full width on small screens */
-    padding: 1.2rem; /* Increase padding for better touch experience */
-  }
-
-  .input-box input,
-  .message-box textarea {
-    padding: 0.8rem; /* Make inputs more touch-friendly */
-  }
+.clickable-phone:hover,
+.clickable-email:hover {
+  color: #4c2b9d;
 }
 
 
