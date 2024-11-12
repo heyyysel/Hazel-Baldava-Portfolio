@@ -63,6 +63,7 @@
         </div>
       </div>
     </section> 
+
     <section id="about">
       <div class="about-header">
         <p class="section__text__p1">Getting to Know</p>
@@ -79,7 +80,7 @@
                 <p>Las Piñas East National High School - Talon Village Annex</p>
               </div>
             </div>
-          </div> <!-- Closing for the first timeline div -->
+          </div> 
           <div class="timeline">
             <div class="timeline-item">
               <div class="timeline-circle">2017</div>
@@ -95,9 +96,8 @@
                 <p>Cavite State University - Bacoor Campus</p>
               </div>
             </div>
-          </div> <!-- Closing for the second timeline div -->
+          </div> 
         </div>
-    
         <div class="details-container">
           <h3>My Skills</h3>
           <div class="skill-bar">
@@ -144,7 +144,6 @@
         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="scrollToSection('#experience')" />
       </div>
     </section>
-    
 
     <section id="experience">
       <div class="experience-header">
@@ -212,63 +211,57 @@
       <div class="arrow-wrapper">
         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="scrollToSection('#contact')" />
       </div>
-      </section>
+    </section>
 
-      <section id="contact">
-        <div class="container">
-          <div class="content">
-            <!-- Left Side with Contact Info -->
-            <div class="left-side">
-              <div class="details">
-                <img src="assets/location.png" alt="Location Icon" class="contact-icon">
-                <div class="topic">Address</div>
-                <div class="text-one">San Nicolas III Bacoor City, Cavite</div>
-              </div>
-              <div class="details">
-                <img src="assets/phone.png" alt="Phone Icon" class="contact-icon">
-                <div class="topic">Phone</div>
-                <div class="text-one">
-                  <a href="tel:+639764870858" class="clickable-phone">+639764870858</a>
-                </div>
-              </div>
-              <div class="details">
-                <img src="assets/email.png" alt="Email Icon" class="contact-icon">
-                <div class="topic">Email</div>
-                <div class="text-one">
-                  <a href="mailto:hazelbaldava016@gmail.com" class="clickable-email">hazelbaldava016@gmail.com</a>
-                </div>
+    <section id="contact">
+      <div class="container">
+        <div class="content">
+          <!-- Left Side with Contact Info -->
+          <div class="left-side">
+            <div class="details">
+              <img src="assets/location.png" alt="Location Icon" class="contact-icon">
+              <div class="topic">Address</div>
+              <div class="text-one">San Nicolas III Bacoor City, Cavite</div>
+            </div>
+            <div class="details">
+              <img src="assets/phone.png" alt="Phone Icon" class="contact-icon">
+              <div class="topic">Phone</div>
+              <div class="text-one">
+                <a href="tel:+639764870858" class="clickable-phone">+639764870858</a>
               </div>
             </div>
-      
-            <!-- Right Side with Form -->
-            <div class="right-side">
-              <h2 class="section-title">Get in touch</h2>
-              <form class="contact-form" action="send_email.php" method="POST">
-                <!-- Name Input -->
-                <div class="input-box">
-                  <input type="text" id="name" name="name" placeholder="Enter your name" required>
-                </div>
-      
-                <!-- Email Input -->
-                <div class="input-box">
-                  <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                </div>
-      
-                <!-- Message Input -->
-                <div class="input-box message-box">
-                  <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
-                </div>
-      
-                <!-- Submit Button -->
-                <div class="button">
-                  <button type="submit" class="submit-btn">Send Now</button>
-                </div>
-              </form>
+            <div class="details">
+              <img src="assets/email.png" alt="Email Icon" class="contact-icon">
+              <div class="topic">Email</div>
+              <div class="text-one">
+                <a href="mailto:hazelbaldava016@gmail.com" class="clickable-email">hazelbaldava016@gmail.com</a>
+              </div>
             </div>
           </div>
+    
+          <!-- Right Side with Form -->
+          <div class="right-side">
+            <h2 class="section-title">Get in touch</h2>
+            <form name="contact" method="POST" data-netlify="true">
+              <input type="hidden" name="form-name" value="contact" />
+              <div class="input-box">
+                <input type="text" name="name" placeholder="Enter your name" required>
+              </div>
+              <div class="input-box">
+                <input type="email" name="email" placeholder="Enter your email" required>
+              </div>
+              <div class="input-box message-box">
+                <textarea name="message" placeholder="Enter your message" required></textarea>
+              </div>
+              <div class="button">
+                <button type="submit" class="submit-btn">Send Now</button>
+              </div>
+            </form>
+          </div>
         </div>
-      </section>
-      
+      </div>
+    </section>
+
     <footer>
       <nav>
         <div class="nav-links-container">
@@ -282,6 +275,7 @@
       </nav>
       <p>Copyright &#169; 2024 Hazel Baldava. All Rights Reserved.</p>
     </footer>    
+
     <script src="script.js"></script>
   </body>
 </html>
