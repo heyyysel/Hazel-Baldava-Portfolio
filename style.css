@@ -347,7 +347,7 @@ section {
   padding: 3rem;
   border-radius: 1rem;
   border: 1px solid #d1d1d1;
-  text-align: center;
+  text-align: left;
   width: 100%;
   max-width: 525px; 
   box-sizing: border-box;
@@ -390,9 +390,9 @@ section {
 
 .timeline-circle {
   position: absolute;
-  left: -32.5px;
-  width: 40px; /* Enlarged size of the circle */
-  height: 40px; /* Enlarged size of the circle */
+  left: -27.5px;
+  width: 30px; /* Enlarged size of the circle */
+  height: 30px; /* Enlarged size of the circle */
   border-radius: 50%;
   background-color: #4a148c;
   color: #e5c9d7;
@@ -410,7 +410,7 @@ section {
 }
 
 .timeline-content {
-  margin-left: 0px; /* Increased left margin to make space for the larger circle */
+  margin-left: 10px; /* Increased left margin to make space for the larger circle */
   width: 100%;
 }
 
@@ -719,7 +719,7 @@ section {
 }
 
 .project-btn:hover {
-  background-color: #4a148c;
+  background-color: #6a42f4;
   color: white;
 }
 
@@ -750,7 +750,7 @@ section {
   background-color: #f7e1d7; /* Soft pink background */
   border-radius: 1rem;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1200px; /* Limit the width for large screens */
   margin: auto;
 }
 
@@ -758,7 +758,7 @@ section {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .content {
@@ -768,11 +768,11 @@ section {
 }
 
 .left-side {
-  flex: 0.5; /* Adjust the width to 50% */
+  flex: 0.5; /* Take up 50% of the space on larger screens */
   background-color: #fff;
   padding: 2rem;
   border-radius: 1rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
 }
 
 .details {
@@ -797,17 +797,17 @@ section {
 }
 
 .right-side {
-  flex: 1.2; /* Right side takes up more space */
+  flex: 1.2; /* Make the right side slightly larger */
   background-color: #fff;
-  padding: 3rem;
+  padding: 4rem;
   border-radius: 1rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
 }
 
 .section-title {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 600;
-  color: #4a148c;
+  color: #4a148c; /* Dark purple */
   margin-bottom: 1rem;
 }
 
@@ -851,10 +851,10 @@ section {
   border-radius: 2rem;
   cursor: pointer;
   transition: all 0.3s ease;
-  width: fit-content; /* Fit the width to the content */
+  width: fit-content;  /* Fit the width to the content */
   margin: 0 auto;      /* Center the button */
-  display: block;
-  text-align: center;
+  display: block;      /* Make it a block element to apply auto margins */
+  text-align: center;  /* Ensure the text is centered */
 }
 
 .submit-btn:hover {
@@ -878,13 +878,13 @@ section {
   text-align: center;
   width: 100%;
   max-width: 600px;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
   transition: all 0.3s ease-in-out;
-  margin-bottom: 2rem;
+  margin-bottom: 2rem; /* Adds space below */
 }
 
 .contact-info:hover {
-  transform: scale(1.05);
+  transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
 .contact-info p {
@@ -896,7 +896,7 @@ section {
 
 .contact-info p strong {
   font-weight: bold;
-  color: #6a42f4;
+  color: #6a42f4; /* Accent color */
 }
 
 .contact-info a {
@@ -908,44 +908,44 @@ section {
 
 .contact-info a:hover {
   text-decoration: underline;
-  color: #4c6ef5;
+  color: #4c6ef5; /* Slightly darker shade on hover */
 }
 
 .contact-info a:focus {
   outline: none;
-  border-bottom: 2px solid #4c6ef5;
+  border-bottom: 2px solid #4c6ef5; /* Add border when focused */
 }
 
-/* Responsive Design */
+/* Responsive design adjustments */
 @media (max-width: 768px) {
   #contact {
-    padding: 2rem;
+    padding: 2rem; /* Adjust padding on smaller screens */
   }
 
   .container {
-    flex-direction: column;
+    flex-direction: column; /* Stack the left and right sides on smaller screens */
     gap: 2rem;
   }
 
   .left-side,
   .right-side {
-    flex: 1;
+    flex: 1; /* Allow both sides to take equal width on small screens */
     width: 100%;
-    padding: 1.5rem;
+    padding: 1.5rem; /* Adjust padding for smaller screens */
   }
 
   .section-title {
-    font-size: 2rem;
+    font-size: 2rem; /* Adjust section title size */
   }
 
   .contact-info {
     margin-top: 1rem;
-    max-width: 100%;
+    max-width: 100%; /* Allow the contact info to be full width */
   }
 
   .submit-btn {
-    width: 100%; /* Make the button full width on smaller screens */
-    padding: 1.2rem;
+    width: 100%; /* Ensure button takes up full width on small screens */
+    padding: 1.2rem; /* Increase padding for better touch experience */
   }
 }
 
