@@ -1,4 +1,4 @@
-/* For screens smaller than or equal to 1200px */
+
 @media screen and (max-width: 1200px) {
   #desktop-nav {
     display: none; /* Hide desktop navigation */
@@ -69,7 +69,7 @@
     align-items: center; /* Center buttons */
   }
 }
-/* For devices with a max width of 768px (typical mobile devices) */
+
 @media (max-width: 768px) {
   .contact-container {
     display: inline-block; /* Stack the two columns vertically */

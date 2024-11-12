@@ -19,14 +19,14 @@ p {
 }
 
 
-/* TRANSITION */
+
 
 a,
 .btn {
   transition: all 300ms ease;
 }
 
-/* DESKTOP NAV */
+
 
 nav,
 .nav-links {
@@ -66,7 +66,7 @@ a:hover {
   cursor: default;
 }
 
-/* HAMBURGER MENU */
+
 
 #hamburger-nav {
   display: none;
@@ -767,7 +767,7 @@ section {
 }
 
 .left-side {
-  flex: 0.5; /* Take up 50% of the space on larger screens */
+  flex: 0; 
   background-color: #fff;
   padding: 2rem;
   border-radius: 1rem;
@@ -830,7 +830,15 @@ section {
 }
 
 .message-box textarea {
-  height: 150px;
+  width: 100%;          /* Takes up 100% of the available width */
+  padding: 1rem;
+  border: 1px solid #4c2b9d;
+  border-radius: 1rem;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  resize: vertical; /* Allow vertical resize only */
+  min-height: 150px;  /* Minimum height for better visibility */
+  max-height: 300px;  /* Maximum height to avoid growing too large */
 }
 
 .submit-btn {
@@ -860,6 +868,7 @@ section {
   outline: none;
 }
 
+/* Adjustments for the contact-info section */
 .contact-info {
   margin-top: 2rem;
   padding: 2rem;
@@ -915,10 +924,9 @@ section {
 
   .container {
     flex-direction: column; /* Stack the left and right sides on smaller screens */
-    gap: 2rem;
+    gap: 1rem;
   }
 
-  .left-side,
   .right-side {
     flex: 1; /* Allow both sides to take equal width on small screens */
     width: 100%;
@@ -938,7 +946,13 @@ section {
     width: 100%; /* Ensure button takes up full width on small screens */
     padding: 1.2rem; /* Increase padding for better touch experience */
   }
+
+  .input-box input,
+  .message-box textarea {
+    padding: 0.8rem; /* Make inputs more touch-friendly */
+  }
 }
+
 
 /* maintenence */
 #maintenance {
