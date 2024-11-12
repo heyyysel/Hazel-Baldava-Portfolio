@@ -217,6 +217,7 @@
       <section id="contact">
         <div class="container">
           <div class="content">
+            <!-- Left Side with Contact Info -->
             <div class="left-side">
               <div class="details">
                 <img src="assets/location.png" alt="Location Icon" class="contact-icon">
@@ -236,22 +237,29 @@
                 <div class="text-one">
                   <a href="mailto:hazelbaldava016@gmail.com" class="clickable-email">hazelbaldava016@gmail.com</a>
                 </div>
-              </div>     
+              </div>
             </div>
       
             <!-- Right Side with Form -->
             <div class="right-side">
               <h2 class="section-title">Get in touch</h2>
-              <form class="contact-form">
+              <form class="contact-form" action="send_email.php" method="POST">
+                <!-- Name Input -->
                 <div class="input-box">
-                  <input type="text" placeholder="Enter your name" required>
+                  <input type="text" id="name" name="name" placeholder="Enter your name" required>
                 </div>
+      
+                <!-- Email Input -->
                 <div class="input-box">
-                  <input type="email" placeholder="Enter your email" required>
+                  <input type="email" id="email" name="email" placeholder="Enter your email" required>
                 </div>
+      
+                <!-- Message Input -->
                 <div class="input-box message-box">
-                  <textarea placeholder="Enter your message" required></textarea>
+                  <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
                 </div>
+      
+                <!-- Submit Button -->
                 <div class="button">
                   <button type="submit" class="submit-btn">Send Now</button>
                 </div>
@@ -259,8 +267,8 @@
             </div>
           </div>
         </div>
-      </section>      
-
+      </section>
+      
     <footer>
       <nav>
         <div class="nav-links-container">

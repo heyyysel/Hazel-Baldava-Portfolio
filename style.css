@@ -750,7 +750,7 @@ section {
   background-color: #f7e1d7; /* Soft pink background */
   border-radius: 1rem;
   width: 100%;
-  max-width: 1200px; /* Limit the width for large screens */
+  max-width: 1200px;
   margin: auto;
 }
 
@@ -758,7 +758,7 @@ section {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .content {
@@ -768,11 +768,11 @@ section {
 }
 
 .left-side {
-  flex: 0.5; /* Take up 50% of the space on larger screens */
+  flex: 0.5; /* Adjust the width to 50% */
   background-color: #fff;
   padding: 2rem;
   border-radius: 1rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .details {
@@ -797,17 +797,17 @@ section {
 }
 
 .right-side {
-  flex: 1.2; /* Make the right side slightly larger */
+  flex: 1.2; /* Right side takes up more space */
   background-color: #fff;
-  padding: 4rem;
+  padding: 3rem;
   border-radius: 1rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .section-title {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 600;
-  color: #4a148c; /* Dark purple */
+  color: #4a148c;
   margin-bottom: 1rem;
 }
 
@@ -851,10 +851,10 @@ section {
   border-radius: 2rem;
   cursor: pointer;
   transition: all 0.3s ease;
-  width: fit-content;  /* Fit the width to the content */
+  width: fit-content; /* Fit the width to the content */
   margin: 0 auto;      /* Center the button */
-  display: block;      /* Make it a block element to apply auto margins */
-  text-align: center;  /* Ensure the text is centered */
+  display: block;
+  text-align: center;
 }
 
 .submit-btn:hover {
@@ -878,13 +878,13 @@ section {
   text-align: center;
   width: 100%;
   max-width: 600px;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-in-out;
-  margin-bottom: 2rem; /* Adds space below */
+  margin-bottom: 2rem;
 }
 
 .contact-info:hover {
-  transform: scale(1.05); /* Slightly enlarge on hover */
+  transform: scale(1.05);
 }
 
 .contact-info p {
@@ -896,7 +896,7 @@ section {
 
 .contact-info p strong {
   font-weight: bold;
-  color: #6a42f4; /* Accent color */
+  color: #6a42f4;
 }
 
 .contact-info a {
@@ -908,44 +908,44 @@ section {
 
 .contact-info a:hover {
   text-decoration: underline;
-  color: #4c6ef5; /* Slightly darker shade on hover */
+  color: #4c6ef5;
 }
 
 .contact-info a:focus {
   outline: none;
-  border-bottom: 2px solid #4c6ef5; /* Add border when focused */
+  border-bottom: 2px solid #4c6ef5;
 }
 
-/* Responsive design adjustments */
+/* Responsive Design */
 @media (max-width: 768px) {
   #contact {
-    padding: 2rem; /* Adjust padding on smaller screens */
+    padding: 2rem;
   }
 
   .container {
-    flex-direction: column; /* Stack the left and right sides on smaller screens */
+    flex-direction: column;
     gap: 2rem;
   }
 
   .left-side,
   .right-side {
-    flex: 1; /* Allow both sides to take equal width on small screens */
+    flex: 1;
     width: 100%;
-    padding: 1.5rem; /* Adjust padding for smaller screens */
+    padding: 1.5rem;
   }
 
   .section-title {
-    font-size: 2rem; /* Adjust section title size */
+    font-size: 2rem;
   }
 
   .contact-info {
     margin-top: 1rem;
-    max-width: 100%; /* Allow the contact info to be full width */
+    max-width: 100%;
   }
 
   .submit-btn {
-    width: 100%; /* Ensure button takes up full width on small screens */
-    padding: 1.2rem; /* Increase padding for better touch experience */
+    width: 100%; /* Make the button full width on smaller screens */
+    padding: 1.2rem;
   }
 }
 
