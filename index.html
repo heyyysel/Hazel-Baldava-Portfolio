@@ -7,6 +7,11 @@
     <title>Hazel Baldava Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <style>
+      .title {
+        color: #4a148c; /* Dark purple color */
+      }
+    </style>
   </head>
   <body>
     <nav id="desktop-nav">
@@ -41,8 +46,8 @@
       <div class="profile-container">
         <div class="section__text">
           <p class="section__text__p1">Hi There 👋,</p>
-          <h1 class="title">I'm Hazel Baldava</h1>
-          <p class="section__text__p2">Customer Service Representative | Computer Science Student</p>
+          <h1 class="title">I'm Hazel Baldava</h1> 
+          <p class="section__text__p2">Customer Service Representative  Computer Science Student</p>
           <div class="btn-container">
             <button class="btn btn-color-2" onclick="window.open('./assets/resume-Hazel.pdf')">Download Resume</button>
             <button class="btn btn-color-1" onclick="showContactInfo()">Contact Information</button>
@@ -57,8 +62,7 @@
           <img src="./assets/profile-pic.png" alt="Hazel Baldava profile picture" />
         </div>
       </div>
-    </section>
-    
+    </section> 
     <section id="about">
       <div class="about-header">
         <p class="section__text__p1">Getting to Know</p>
@@ -69,20 +73,29 @@
           <h3>My Education</h3>
           <div class="timeline">
             <div class="timeline-item">
+              <div class="timeline-circle">2013</div>
+              <div class="timeline-content">
+                <h4 class="highlight">Junior High School</h4>
+                <p>Las Piñas East National High School - Talon Village Annex</p>
+              </div>
+            </div>
+          </div> <!-- Closing for the first timeline div -->
+          <div class="timeline">
+            <div class="timeline-item">
               <div class="timeline-circle">2017</div>
               <div class="timeline-content">
-                <h3>Senior High School</h3>
-                <p>University of Perpetual Help System Delta - Las Pinas Campus</p>
+                <h4 class="highlight">Senior High School</h4>
+                <p>University of Perpetual Help System Delta - Las Piñas Campus</p>
               </div>
             </div>
             <div class="timeline-item">
               <div class="timeline-circle">2022</div>
               <div class="timeline-content">
-                <h3>Computer Science Program</h3>
+                <h4 class="highlight">Computer Science Program</h4>
                 <p>Cavite State University - Bacoor Campus</p>
               </div>
             </div>
-          </div>
+          </div> <!-- Closing for the second timeline div -->
         </div>
     
         <div class="details-container">
@@ -140,7 +153,7 @@
       </div>
       <div class="experience-container">
         <div class="experience-item">
-          <div class="timeline-circle"></div>
+          <img src="assets/experience.png" alt="Icon" class="experience-icon">
           <div class="experience-content">
             <h4>May 2019 - October 2020</h4>
             <p>Alorica</p>
@@ -148,7 +161,7 @@
           </div>
         </div>
         <div class="experience-item">
-          <div class="timeline-circle"></div>
+          <img src="assets/experience.png" alt="Icon" class="experience-icon">
           <div class="experience-content">
             <h4>October 2020 - November 2023</h4>
             <p>Concentrix</p>
@@ -156,7 +169,7 @@
           </div>
         </div>
         <div class="experience-item">
-          <div class="timeline-circle"></div>
+          <img src="assets/experience.png" alt="Icon" class="experience-icon">
           <div class="experience-content">
             <h4>November 2023 - Present</h4>
             <p>Concentrix</p>
@@ -200,21 +213,53 @@
         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="scrollToSection('#contact')" />
       </div>
       </section>
-    
-    <section id="contact">
-      <h2 class="section-title">Contact Me</h2>
-      <p class="contact-email"><a href="mailto:hazelbaldava016@gmail.com">hazelbaldava016@gmail.com</a></p>
-      <p class="contact-text">Feel free to contact me with any inquiries or questions!</p>
-      <form class="contact-form">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Your name" required>
-        <label for="email">Email Address</label>
-        <input type="email" id="email" name="email" placeholder="Your email" required>
-        <label for="message">Message</label>
-        <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
-        <button type="submit" class="submit-btn">Submit</button>
-      </form>
-    </section>  
+
+      <section id="contact">
+        <div class="container">
+          <div class="content">
+            <div class="left-side">
+              <div class="details">
+                <img src="assets/location.png" alt="Location Icon" class="contact-icon">
+                <div class="topic">Address</div>
+                <div class="text-one">San Nicolas III Bacoor City, Cavite</div>
+              </div>
+              <div class="details">
+                <img src="assets/phone.png" alt="Phone Icon" class="contact-icon">
+                <div class="topic">Phone</div>
+                <div class="text-one">
+                  <a href="tel:+639764870858" class="clickable-phone">+639764870858</a>
+                </div>
+              </div>
+              <div class="details">
+                <img src="assets/email.png" alt="Email Icon" class="contact-icon">
+                <div class="topic">Email</div>
+                <div class="text-one">
+                  <a href="mailto:hazelbaldava016@gmail.com" class="clickable-email">hazelbaldava016@gmail.com</a>
+                </div>
+              </div>     
+            </div>
+      
+            <!-- Right Side with Form -->
+            <div class="right-side">
+              <h2 class="section-title">Get in touch</h2>
+              <form class="contact-form">
+                <div class="input-box">
+                  <input type="text" placeholder="Enter your name" required>
+                </div>
+                <div class="input-box">
+                  <input type="email" placeholder="Enter your email" required>
+                </div>
+                <div class="input-box message-box">
+                  <textarea placeholder="Enter your message" required></textarea>
+                </div>
+                <div class="button">
+                  <button type="submit" class="submit-btn">Send Now</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>      
 
     <footer>
       <nav>
