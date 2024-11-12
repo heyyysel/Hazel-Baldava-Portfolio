@@ -69,6 +69,27 @@
     align-items: center; /* Center buttons */
   }
 }
+/* For devices with a max width of 768px (typical mobile devices) */
+@media (max-width: 768px) {
+  .contact-container {
+    display: inline-block; /* Stack the two columns vertically */
+    width: 100%; /* Full width */
+  }
+
+  .contact-left, .contact-right {
+    width: 100%; /* Full width for both left and right sections */
+    margin-bottom: 20px; /* Space between sections */
+  }
+
+  .contact-form input, .contact-form textarea {
+    width: 100%; /* Ensure inputs take full width */
+    margin: 10px 0; /* Space between form elements */
+  }
+  
+  .contact-button {
+    width: 100%; /* Make the button full width */
+  }
+}
 
 /* For screens smaller than or equal to 600px */
 @media screen and (max-width: 600px) {
