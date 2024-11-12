@@ -743,119 +743,52 @@ section {
 /* contact */
 #contact {
   display: flex;
-  justify-content: center; /* Center the content horizontally */
+  justify-content: space-between;
   align-items: flex-start;
   padding: 3rem;
-  background-color: #f7e1d7; /* Soft pink background */
+  background-color: #f7e1d7; /* Light blue background */
   border-radius: 1rem;
   width: 100%;
-  max-width: 1200px; /* Limit the width for large screens */
+  max-width: 1200px;
   margin: auto;
 }
 
 .container {
   display: flex;
-  justify-content: center; /* Center the container content */
+  justify-content: space-between;
   width: 100%;
 }
 
-.content {
-  width: 60%; /* Allocate 60% width for the form */
-  padding: 2rem;
-  background-color: #fff;
-  border-radius: 1rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
-  margin: 0 auto; /* Horizontally center the content box */
-  box-sizing: border-box; /* Ensure padding does not affect width */
-}
-
-.contact-info {
-  width: 35%; /* Allocate 35% width for contact info */
+.left-side {
+  width: 40%; /* Allocate 40% width for contact info */
   padding: 2rem;
   background-color: #fff;
   border-radius: 1rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  margin-left: auto;
-  margin-right: auto; /* Center contact info box */
-  box-sizing: border-box; /* Ensure padding does not affect width */
+  box-sizing: border-box;
 }
 
-.section-title {
-  font-size: 2rem;
-  font-weight: 600;
-  color: #4a148c; /* Dark purple */
-  margin-bottom: 1rem;
+.right-side {
+  width: 55%; /* Allocate 55% width for the form */
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
 }
 
-.contact-text {
-  font-size: 1rem;
-  color: #6a6a6a;
-  margin-bottom: 2rem;
-  line-height: 1.5;
-}
-
-.input-box {
+.details {
+  display: flex;
+  align-items: center;
   margin-bottom: 1.5rem;
 }
 
-.input-box input,
-.message-box textarea {
-  width: 100%;
-  padding: 1rem;
-  border: 1px solid #4c2b9d;
-  border-radius: 1rem;
-  font-size: 1rem;
-  transition: all 0.3s ease;
-  box-sizing: border-box; /* Ensure padding does not affect width */
+.contact-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 1rem;
 }
 
-.input-box input:focus,
-.message-box textarea:focus {
-  border-color: #6a42f4;
-  outline: none;
-}
-
-.message-box textarea {
-  width: 100%; /* Takes up 100% of the available width */
-  padding: 1rem;
-  border: 1px solid #4c2b9d;
-  border-radius: 1rem;
-  font-size: 1rem;
-  transition: all 0.3s ease;
-  resize: vertical; /* Allow vertical resize only */
-  min-height: 150px; /* Minimum height for better visibility */
-  max-height: 300px; /* Maximum height to avoid growing too large */
-  box-sizing: border-box; /* Ensure padding does not affect width */
-}
-
-.submit-btn {
-  background-color: #6a42f4;
-  color: white;
-  padding: 1rem;
-  font-size: 1rem;
-  border: none;
-  border-radius: 2rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  width: fit-content; /* Fit the width to the content */
-  margin: 0 auto; /* Center the button */
-  display: block; /* Make it a block element to apply auto margins */
-  text-align: center; /* Ensure the text is centered */
-}
-
-.submit-btn:hover {
-  background-color: #4c2b9d;
-}
-
-.submit-btn:active {
-  background-color: #6a42f4;
-}
-
-.submit-btn:focus {
-  outline: none;
-}
-
-/* Contact Info Styling */
 .contact-info p {
   font-size: 1rem;
   color: #4f4f4f;
@@ -869,53 +802,68 @@ section {
 }
 
 .contact-info a {
-  color: #4f4f4f;
+  color: #4a148c;
   font-weight: 500;
   text-decoration: none;
   transition: all 0.3s ease;
 }
 
 .contact-info a:hover {
-  text-decoration: underline;
-  color: #4c6ef5; /* Slightly darker shade on hover */
+  color: #6a42f4; /* Darker blue on hover */
 }
 
-.contact-info a:focus {
-  outline: none;
-  border-bottom: 2px solid #4c6ef5; /* Add border when focused */
-}
-
-/* Adjusting icons and contact info layout */
-.details {
-  display: flex;
-  align-items: center;
+.input-box {
   margin-bottom: 1.5rem;
 }
 
-.contact-icon {
-  width: 30px; /* Adjust icon size */
-  height: 30px; /* Ensure the icon maintains aspect ratio */
-  margin-right: 1rem; /* Space between icon and text */
+.input-box input,
+.message-box textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #4a148c;
+  border-radius: 1rem;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
 }
 
-.topic {
-  font-weight: bold;
-  color: #4a148c;
+.input-box input:focus,
+.message-box textarea:focus {
+  border-color: #4a148c;
+  outline: none;
 }
 
-.text-one {
-  color: #6a6a6a;
+.message-box textarea {
+  resize: vertical;
+  min-height: 150px;
+  max-height: 300px;
 }
 
-.clickable-phone,
-.clickable-email {
-  color: #6a42f4;
-  text-decoration: none;
+.submit-btn {
+  background-color: #4a148c;
+  color: white;
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: fit-content;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
 }
 
-.clickable-phone:hover,
-.clickable-email:hover {
-  color: #4c2b9d;
+.submit-btn:hover {
+  background-color: #6a42f4;
+}
+
+.submit-btn:active {
+  background-color: #4a148c;
+}
+
+.submit-btn:focus {
+  outline: none;
 }
 
 
