@@ -47,86 +47,97 @@
             <button class="btn btn-color-2" onclick="window.open('./assets/resume-Hazel.pdf')">Download Resume</button>
             <button class="btn btn-color-1" onclick="showContactInfo()">Contact Information</button>
           </div>
+          <div id="contact-info" class="contact-info" style="display: none;">
+            <p><strong>Email:</strong> <a href="mailto:hazelbaldava016@gmail.com">hazelbaldava016@gmail.com</a></p>
+            <p><strong>Facebook:</strong> <a href="https://www.facebook.com/heyseeeel" target="_blank">Facebook.com/Hazel</a></p>
+            <p><strong>Phone Number:</strong> <a href="tel:+639764870858">09764870858</a></p>
+          </div>
         </div>
         <div class="section__pic-container">
           <img src="./assets/profile-pic.png" alt="Hazel Baldava profile picture" />
         </div>
       </div>
     </section>
-
+    
     <section id="about">
-      <p class="section__text__p1">Learn More</p>
-      <h1 class="title">About My Journey</h1>
-        <div class="about-containers">
-          <div class="details-container">
-            <h3>My Education</h3>
+      <div class="about-header">
+        <p class="section__text__p1">Getting to Know</p>
+        <h1 class="title">Hazel</h1>
+      </div>
+      <div class="about-containers">
+        <div class="details-container">
+          <h3>My Education</h3>
           <div class="timeline">
             <div class="timeline-item">
+              <div class="timeline-circle">2017</div>
               <div class="timeline-content">
-                <h4>2017-2019</h4>
-                <p>Senior High School</p>
-                <p>University of Perpetual Help System Delta- Las Pinas Campus</p>
+                <h3>Senior High School</h3>
+                <p>University of Perpetual Help System Delta - Las Pinas Campus</p>
               </div>
             </div>
             <div class="timeline-item">
+              <div class="timeline-circle">2022</div>
               <div class="timeline-content">
-                <h4>2022-Present</h4>
-                <p>Computer Science</p>
-                <p>Cavite State University- Bacoor Campus</p>
+                <h3>Computer Science Program</h3>
+                <p>Cavite State University - Bacoor Campus</p>
               </div>
             </div>
           </div>
         </div>
-          <div class="details-container">
-            <h3>My Skills</h3>
-            <div class="skill-bar">
-              <div class="skill-item">
-                <p>CSS</p>
-                <div class="skill-progress">
-                  <div class="progress-bar" style="width: 70%"></div>
-                </div>
+    
+        <div class="details-container">
+          <h3>My Skills</h3>
+          <div class="skill-bar">
+            <div class="skill-item">
+              <p>CSS</p>
+              <div class="skill-progress">
+                <div class="progress-bar" style="width: 80%;"></div>
               </div>
-              <div class="skill-item">
-                <p>HTML</p>
-                <div class="skill-progress">
-                  <div class="progress-bar" style="width: 65%"></div>
-                </div>
+            </div>
+            <div class="skill-item">
+              <p>HTML</p>
+              <div class="skill-progress">
+                <div class="progress-bar" style="width: 70%;"></div>
               </div>
-              <div class="skill-item">
-                <p>Java</p>
-                <div class="skill-progress">
-                  <div class="progress-bar" style="width: 45%"></div>
-                </div>
+            </div>
+            <div class="skill-item">
+              <p>Java</p>
+              <div class="skill-progress">
+                <div class="progress-bar" style="width: 60%;"></div>
               </div>
-              <div class="skill-item">
-                <p>Adaptability</p>
-                <div class="skill-progress">
-                  <div class="progress-bar" style="width: 80%"></div>
-                </div>
+            </div>
+            <div class="skill-item">
+              <p>Adaptability</p>
+              <div class="skill-progress">
+                <div class="progress-bar" style="width: 75%;"></div>
               </div>
-              <div class="skill-item">
-                <p>Communication</p>
-                <div class="skill-progress">
-                  <div class="progress-bar" style="width: 90%"></div>
-                </div>
+            </div>
+            <div class="skill-item">
+              <p>Communication</p>
+              <div class="skill-progress">
+                <div class="progress-bar" style="width: 65%;"></div>
               </div>
-              <div class="skill-item">
-                <p>Positive Attitude</p>
-                <div class="skill-progress">
-                  <div class="progress-bar" style="width: 80%"></div>
-                </div>
+            </div>
+            <div class="skill-item">
+              <p>Positive Attitude</p>
+              <div class="skill-progress">
+                <div class="progress-bar" style="width: 85%;"></div>
               </div>
             </div>
           </div>
         </div>
+      </div> 
+      <div class="arrow-wrapper">
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="scrollToSection('#experience')" />
       </div>
-      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="scrollToSection('#experience')" />
     </section>
     
 
     <section id="experience">
-      <p class="section__text__p1">Review My</p>
-      <h1 class="title">Work Experience</h1>
+      <div class="experience-header">
+        <p class="section__text__p1">Employment</p>
+        <h1 class="title">History</h1>
+      </div>
       <div class="experience-container">
         <div class="experience-item">
           <div class="timeline-circle"></div>
@@ -148,12 +159,14 @@
           <div class="timeline-circle"></div>
           <div class="experience-content">
             <h4>November 2023 - Present</h4>
-            <p>Patient Auto Dollar</p>
+            <p>Concentrix</p>
             <p class="experience-description">Evaluated applications for the Canva for Education program to determine eligibility based on school credentials and teaching status.</p>
           </div>
         </div>
       </div>
-      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="scrollToSection('#projects')" />
+      <div class="arrow-wrapper">
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="scrollToSection('#projects')" />
+      </div>
     </section>
 
     <section id="projects">
@@ -183,8 +196,10 @@
           </div>
         </div>
       </div>
-    </section>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="scrollToSection('#contact')" />
+      <div class="arrow-wrapper">
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="scrollToSection('#contact')" />
+      </div>
+      </section>
     
     <section id="contact">
       <h2 class="section-title">Contact Me</h2>

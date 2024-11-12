@@ -63,44 +63,50 @@
 @media screen and (max-width: 600px) {
   #contact,
   footer {
-    height: 40vh; /* Reduce height for contact and footer */
+    height: auto; /* Adjust height for a more natural fit */
   }
 
   #profile {
-    height: 83vh; /* Maintain profile height for mobile */
+    height: 75vh; /* Reduce profile height slightly for a better fit */
     margin-bottom: 0; /* Remove margin at the bottom */
   }
 
   article {
-    font-size: 1rem; /* Adjust font size for readability */
+    font-size: 1.1rem; /* Slightly increase font size for readability */
   }
 
   footer nav {
-    height: fit-content; /* Adjust footer navigation height */
+    height: auto; /* Let footer content adjust naturally */
     margin-bottom: 2rem; /* Add space at the bottom */
   }
 
   .about-containers,
   .contact-info-upper-container,
   .btn-container {
-    flex-wrap: wrap; /* Wrap items in containers */
+    flex-wrap: wrap; /* Wrap items to fit available space */
+    justify-content: center; /* Center content for a cleaner look */
   }
 
   .contact-info-container {
-    margin: 0; /* Remove margin */
+    margin: 0; /* Remove margin for a clean fit */
+    width: 100%; /* Ensure full width usage */
+    padding: 0 1rem; /* Add padding for spacing */
   }
 
   .contact-info-container p,
   .nav-links li a {
     font-size: 1rem; /* Adjust font size for smaller screens */
+    text-align: center; /* Center align text */
   }
 
   .experience-sub-title {
-    font-size: 1.25rem; /* Adjust subtitle size */
+    font-size: 1.5rem; /* Increase subtitle size for better visibility */
+    text-align: center; /* Center align subtitle */
   }
 
   .logo {
-    font-size: 1.5rem; /* Adjust logo size */
+    font-size: 1.75rem; /* Adjust logo size for balance */
+    text-align: center; /* Center align logo */
   }
 
   .nav-links {
@@ -110,20 +116,35 @@
   }
 
   .section__pic-container {
-    width: auto; /* Allow image container to adjust width */
-    height: 46vw; /* Maintain aspect ratio for smaller screens */
-    justify-content: center; /* Center image vertically */
+    width: 90%; /* Allow image to scale properly */
+    height: auto; /* Let image adjust naturally */
+    margin: 0 auto 2rem; /* Center image with bottom margin */
+    max-height: 250px; /* Set a max-height for consistency */
+    object-fit: cover; /* Maintain aspect ratio of images */
   }
 
   .section__text__p2 {
-    font-size: 1.25rem; /* Adjust font size for section text */
+    font-size: 1.2rem; /* Adjust text size for section text */
+    line-height: 1.6; /* Improve line spacing for readability */
   }
 
   .title {
-    font-size: 2rem; /* Adjust title size for readability */
+    font-size: 2rem; /* Ensure title is large enough to be readable */
+    text-align: center; /* Center align title */
   }
 
   .text-container {
     text-align: justify; /* Justify text for better mobile readability */
+    padding: 0 1rem; /* Add padding for a cleaner layout */
+  }
+
+  .btn-container {
+    width: 100%; /* Ensure button container spans full width */
+    text-align: center; /* Center align buttons */
+  }
+
+  .about-containers {
+    margin-top: 2rem; /* Add space at the top for separation */
+    justify-content: center; /* Center content */
   }
 }
