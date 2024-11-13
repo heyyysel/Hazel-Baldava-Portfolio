@@ -178,7 +178,11 @@ section {
   justify-content: center;
   align-items: center;
   flex: 1;
-  padding: 1rem; /* Add padding for spacing */
+  padding: 1rem; 
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
 }
 
 .section__pic-container img {
@@ -864,77 +868,6 @@ section {
 
 .submit-btn:focus {
   outline: none;
-}
-
-
-/* maintenence */
-#maintenance {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  padding: 1.5rem; /* Reduced padding around the section */
-  background-color: #e5c9d7;
-  border-radius: 1rem;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  margin-top: 2rem;
-  max-width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.maintenance-card {
-  background-color: #ffffff;
-  border-radius: 1rem;
-  padding: 1.5rem; /* Reduced padding inside the card */
-  text-align: center;
-  width: 25%; /* Reduced width for more compact cards */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.maintenance-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.icon-container {
-  background-color: #f7e1d7;
-  padding: 0.75rem; /* Reduced padding around the icon */
-  border-radius: 50%;
-  display: inline-block;
-  margin-bottom: 1rem;
-}
-
-.maintenance-icon {
-  width: 35px; /* Reduced icon size */
-  height: 35px;
-  object-fit: contain;
-}
-
-.maintenance-card h2 {
-  font-size: 1.25rem; /* Slightly smaller font for the title */
-  color: #4a148c;
-  margin: 0;
-}
-
-.maintenance-card p {
-  font-size: 0.9rem; /* Smaller font size for the description */
-  color: #737373;
-  line-height: 1.6;
-  margin-top: 1rem;
-  text-align: justify; /* Align text to the left */
-}
-
-@media (max-width: 768px) {
-  #maintenance {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .maintenance-card {
-    width: 80%;
-    margin-bottom: 1.5rem;
-  }
 }
 
 /* FOOTER SECTION */
