@@ -82,7 +82,12 @@
       width: auto; /* Adjust based on content */
       max-width: 100%; /* Prevent it from overflowing */
       padding-right: 1rem; 
-  }
+    }
+    .right-side {
+      width: auto; /* Adjust based on content */
+      max-width: 100%; /* Prevent it from overflowing */
+      padding-right: 1rem; 
+}
 }
 
   .content,
